@@ -1,0 +1,4 @@
+<div class="right-container d-flex justify-content-end">
+  <p id="chat_<%= chat.id %>"><%= chat.message %></p>
+  <%= link_to "削除", chat_path(chat), method: :delete, data: { confirm: "本当に削除しますか？" }, class: "ml-3", remote: true, id: "delete_chat_#{chat.id}" %>
+</div>
